@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Matt Hamilton's website.`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Matt Hamilton`,
+      summary: `who lives and works in Brooklyn, NY.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A personal site containing the musings of Matt Hamilton.`,
+    siteUrl: `https://matthewphamilton.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `mattphamilton`,
     },
   },
   plugins: [
@@ -66,12 +66,24 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/smile.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-google-fonts-v2`,
+      options: {
+        fonts: [
+          {
+            family: 'Roboto Mono',
+            variable: true,
+            weights: ['200..900', '200..900']
+          }
+        ]
+      }
+    }
   ],
 }
