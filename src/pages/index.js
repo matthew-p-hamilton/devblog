@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/Bio/Bio"
 import Layout from "../components/Layout/Layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO/SEO"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
