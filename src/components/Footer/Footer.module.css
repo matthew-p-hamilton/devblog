@@ -7,5 +7,5 @@
 
 .footerLinks > a {
   color: var(--black);
-  padding: 0.5rem;
+  padding: var(--spacing-2);
 }

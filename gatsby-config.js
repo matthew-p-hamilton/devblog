@@ -3,7 +3,7 @@ module.exports = {
     title: `Matt Hamilton's website.`,
     author: {
       name: `Matt Hamilton`,
-      summary: `who lives and works in Brooklyn, NY.`,
+      summary: `lives and works in Brooklyn, NY.`,
     },
     description: `A personal site containing the musings of Matt Hamilton.`,
     siteUrl: `https://matthewphamilton.com`,
