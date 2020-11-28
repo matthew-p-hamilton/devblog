@@ -1,0 +1,11 @@
+.footer {
+  margin: var(--spacing-0) auto;
+  max-width: var(--maxWidth-wrapper);
+  padding: var(--spacing-6) var(--spacing-0);
+  text-align: center;
+}
+
+.footerLinks > a {
+  color: var(--black);
+  padding: 0.5rem;
+}
