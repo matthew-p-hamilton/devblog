@@ -75,16 +75,12 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: `gatsby-plugin-google-fonts-v2`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [
-          {
-            family: 'Roboto Mono',
-            variable: true,
-            weights: ['200..900', '200..900']
-          }
-        ]
-      }
-    }
+        google: {
+          families: ['Roboto', 'Roboto Mono'],
+        },
+      },
+    },
   ],
 }

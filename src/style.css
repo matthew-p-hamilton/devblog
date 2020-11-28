@@ -28,8 +28,8 @@
   --spacing-24: 6rem;
   --spacing-32: 8rem;
   --fontFamily-sans: "Roboto Mono", system-ui, -apple-system, BlinkMacSystemFont;
-  --fontFamily-serif: "Roboto Mono", "Georgia", Cambria, "Times New Roman",
-    Times, serif;
+  --fontFamily-serif: "Roboto", "Georgia", Cambria, "Times New Roman", Times,
+    serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
@@ -52,11 +52,9 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
-  --color-heading-black: black;
   --color-accent: #d1dce5;
   --offWhite: #f5f8f7;
   --white: #ffffff;
@@ -64,6 +62,7 @@
   --gray: #f5f8f7;
   --persianPink: #f991cc;
   --electricBlue: #75f4f4;
+  --link: #005b99;
 }
 
 /* HTML elements */
@@ -124,7 +123,7 @@ h6 {
 h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
+  color: var(--black);
 }
 
 h2 {
@@ -205,7 +204,7 @@ blockquote {
   margin-left: calc(-1 * var(--spacing-6));
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
-  border-left: var(--spacing-1) solid var(--color-primary);
+  border-left: var(--spacing-1) solid var(--link);
   font-size: var(--fontSize-2);
   font-style: italic;
   margin-bottom: var(--spacing-8);
@@ -234,7 +233,7 @@ table thead tr th {
 /* Link */
 
 a {
-  color: var(--color-primary);
+  color: var(--black);
 }
 
 a:hover,
@@ -255,7 +254,7 @@ a:focus {
 
 .post-list-item h2 {
   font-size: var(--fontSize-4);
-  color: var(--color-primary);
+  color: var(--black);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
 }
