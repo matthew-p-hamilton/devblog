@@ -1,2 +1,2 @@
-import Bio from './Bio';
+import Bio from './bio';
 export default Bio;
