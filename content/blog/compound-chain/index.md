@@ -4,11 +4,13 @@ date: "2020-12-22T00:00:00.000Z"
 description: "Another blockchain, really?"
 ---
 
-_Disclaimer: Everything stated here is speculation and opinion based on public information. Also, I own some COMP._
+_Disclaimer: Everything stated here is speculation and uninformed opinion based on public information. Also, I own some COMP._
+
+Yep, another blockchain.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today, we&#39;re excited to share the whitepaper for Compound Chain, a distributed ledger capable of transferring value &amp; liquidity between peer ledgers.<a href="https://t.co/TFjJ0JbToV">https://t.co/TFjJ0JbToV</a> <a href="https://t.co/lCzrGyscPa">pic.twitter.com/lCzrGyscPa</a></p>&mdash; Compound Labs (@compoundfinance) <a href="https://twitter.com/compoundfinance/status/1339660221359124481?ref_src=twsrc%5Etfw">December 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Last week, [Compound.Finance](https://compound.finance) announced [Compound Chain](https://compound.cash), a new application-specific blockchain. This is an interesting announcement for any crypto-geeks like myself. I wanted to understand the strategy behind this move, so I'm going to attempt to break it down here. Skip to the bottom if you just want the takeaways.
+Last week, [Compound.Finance](https://compound.finance) announced [Compound Chain](https://compound.cash), a new application-specific blockchain. This is an interesting announcement for any crypto-geeks like myself. I wanted to attempt to understand the strategy behind this move, so I'm going to attempt to break it down here. Skip to the bottom if you just want the takeaways.
 
 # What is Compound.Finance?
 
@@ -21,6 +23,8 @@ Compound has been one of my favorite Ethereum projects for quite some time. I wa
 Compound Chain is a **newly announced blockchain** by the Compound team. Its objective is to become the unifying ledger that powers a future version of Compound.Finance spanning multiple blockchains (as opposed to the single Ethereum chain like today). It comes with a native unit of account called CASH to power transactions. It will have a built in Proof-of-Authority consensus mechanism, and will connect to supported blockchains through "Starports."
 
 To supply an asset as collateral to the Compound Chain, users will lock assets native to the peer blockchain (i.e. USDC on Ethereum) in a Starport smart contract that exists on that peer chain, and the Compound Chain debits an equal amount of the corresponding asset to an account native to its chain. Users with a positive supply on the Compound Chain will then be able to borrow an asset of any supported type, no matter the chain, subject to collateral requirements set by Compound community governance.
+
+---
 
 # Does Compound need its own blockchain?
 
@@ -36,7 +40,7 @@ In regards to why, specifically, the Compound team states they're building Compo
 
 > _The protocol aggregates the risk of its supported assets; one bad asset spoils the bunch, limiting the universe of acceptable collateral._
 
-True, but it would seem to me that that's a feature. Pooled liquidity across assets is one of the innovations that Compound brought to market, and at first glance it's still not quite clear to me how [Compound.Chain](http://compound.Cash) solves this limitation.
+True, but it would seem to me that that's a feature. Pooled liquidity across assets is one of the innovations that Compound brought to market, and at first glance it's still not quite clear to me how [Compound Chain](http://compound.cash) solves this limitation.
 
 > _High transactions costs have priced out small transactions._
 
@@ -52,19 +56,23 @@ Technically, correct. But is there really much of a difference between wrapped B
 
 Ok, so just considering the limitations listed in the whitepaper, it's still not quite clear to me why the Compound team would decide to take on the herculean task of building its own blockchain.
 
+---
+
 ## Layer 1 Point of View
 
-It probably helps to also thinking about how Layer 1 (i.e. the blockchain layer) plays out in the future. The following are 3 camps that one might subscribe to:
+It probably helps to also think about how Layer 1 (i.e. the blockchain layer) plays out in the future. The following are 3 camps that one might subscribe to:
 
 1. _"There will be a winner-take-all blockchain in the long run, and it will be Ethereum."_
 2. _"There will be a handful of chains that succeed, and we (or our community) has the ability to pick them."_
 3. _"There will be many chains, and we don't want to try to pick winners."_
 
-View #1 implies doubling-down on Ethereum by picking a Layer 2 scaling solution that's in the works (Optimistic vs zkSync) and expending resources to support. View #2 would mean re-building Compound on each individual chain that Compound (and its community) believes will be successful in the long run (Solana, Tezos, more listed in the Compound Chain whitepaper). View #3 would lead you down the path of considering that you may need to build your own chain and ensure interoperability between as many as possible.
+View #1 implies doubling-down on Ethereum by picking a Layer 2 scaling solution that's in the works (Optimistic vs zkSync) and expending resources to support it. View #2 would mean re-building Compound on each individual chain that Compound (and its community) believes will be successful in the long run (Solana, Tezos, more listed in the Compound Chain whitepaper). View #3 would lead you down the path of considering that you may need to build your own chain and ensure interoperability between as many as possible.
 
-**It seems clear to me that the Compound team subscribes to View #3.** The benefits to subscribing to this view means that the Compound team will take action to make sure Compound succeeds whether any single underlying blockchain also succeeds or not. The negative is the increased technical difficult and complexity of any solution proposed.
+**It seems clear to me that the Compound team subscribes to View #3.** The benefits to subscribing to this view means that the Compound team will take action to make sure Compound succeeds whether any single underlying blockchain also succeeds or not. The negative is the increased technical difficulty and complexity of any solution proposed.
 
 Thinking about Layer 1 this way, you could convince yourself to build a blockchain. You could also convince yourself that your product just needs to leverage one (or multiple) of the interoperability solutions (Polkadot, Cosmos) being worked on.
+
+---
 
 ## Protocol KPIs and Desired Outcomes
 
@@ -77,19 +85,19 @@ We might consider the outcomes that the team is trying to drive. KPIs that the C
 - Protocol Revenue
 - Governance Token (COMP) Value
 
-These are my uninformed guesses on the high level KPIs that the Compound team cares about. In reality, they're probably looking at a specific form of these — I can't tell so I'll keep it relatively general. They may also be placing more weight on a subset of these, and they may be looking at other KPIs altogether. Let's take a deeper look at each anyway.
+These are my uninformed guesses on the high-level KPIs that the Compound team cares about. In reality, they're probably looking at a specific form of these — I can't tell so I'll keep it relatively general. They may also be placing more weight on a subset of these, and they may be looking at other KPIs altogether. Let's take a deeper look at each anyway.
 
 ### Number of unique active users
 
 More users means more potential activity in the form of supplying or borrowing. Unique active users is likely measured as unique addresses currently supplying the protocol with assets. Borrowers are inherently included in this because each borrower must also be supplying collateral.
 
-This chart below shows the cumulative number of addresses that have supplied assets to the Compound protocol over time. We can see a (relatively) small bump when COMP launched over the summer of 2020, however, October was when significant increases in Compound users start occurring. A quick Twitter search finds that October 15 was when Coinbase Wallet began allowing COMP farming with USDC. Very interesting that a wallet integration was a much stronger catalyst for increasing the total number of users to Compound than the launch of COMP, which kickstarted the summer of yield farming (granted, that wallet is Coinbase).
+The chart below shows the cumulative number of addresses that have supplied assets to the Compound protocol over time. We can see a (relatively) small bump when COMP launched over the summer of 2020, however, October was when significant increases in Compound users start occurring. A quick Twitter search finds that October 15 was when Coinbase Wallet began allowing COMP farming with USDC. Very interesting that a wallet integration was a much stronger catalyst for increasing the total number of users to Compound than the launch of COMP, which kickstarted the summer of yield farming (granted, that wallet is Coinbase).
 
 **Total Compound Users Over Time**
 
 ![](../../assets/Compound-Users-Over-Time.png)
 
-Borrowers are the real valuable users. Everyone is interested in yield, but there's no yield if no one wants to borrow (and spoiler alert for below - today Compound only generates revenue on borrowing). Considering we don't see a similar October surge on the borrowing side in the chart below - the logical conclusion is that most of the Coinbase Wallet users are only supplying assets to the protocol. The launch of COMP and liquidity farming clearly had a clear impact on borrowing activity, that continues to remain elevated compared to before the launch.
+Borrowers are the real valuable users. Everyone is interested in yield, but there's no yield if no one wants to borrow (and spoiler alert for below - today Compound only generates revenue on borrowing). Considering we don't see a similar October surge on the borrowing side in the chart below - the logical conclusion is that most of the Coinbase Wallet users are only supplying assets to the protocol. The launch of COMP and liquidity farming clearly had a clear impact on borrowing activity, which continues to remain elevated compared to before the launch.
 
 **Compound Weekly Borrowers Over The Last Year**
 
@@ -99,7 +107,7 @@ Are there more borrowers on other chains that are just waiting for Compound to c
 
 **Where are the active users today?**
 
-Primarily BTC (Orange) and ETH (Blue). Other smart contract platforms like Tezos, EOS, and Cardano have not come close to those two since the end of 2019, and the disparity is growing. Compound already has access to the majority of crypto users by just existing on Ethereum. Expanding to new blockchains doesn't seem like it's going to make much of an impact at today's levels of active address activity. This could always change in the future though.
+Looking below, primarily BTC (Orange) and ETH (Blue). Other smart contract platforms like Tezos, EOS, and Cardano have not come close to those two since the end of 2019, and the disparity is growing. Compound already has access to the majority of crypto users by just existing on Ethereum. Expanding to new blockchains doesn't seem like it's going to make much of an impact at today's levels of active address activity. This could always change in the future though.
 
 ![](../../assets/Compound-Active-Addresses.png)
 
@@ -118,7 +126,7 @@ There are teams working on interoperability though (Polkadot, Cosmos), in a way 
 
 ### Protocol revenue
 
-The Compound protocol makes revenue by capturing a portion of interest generated from borrowing activity. More borrowing = more protocol revenue. To enable borrowing, there must be supply. So net supply and outstanding debt are two of the metrics to explore here.
+The Compound protocol makes revenue by capturing a portion of the interest generated from borrowing activity. More borrowing = more protocol revenue. To enable borrowing, there must be supply. So net supply and outstanding debt are two of the metrics to explore here.
 
 Based on the data below, supply is definitely growing - \$3B in supply as of mid-Dec 2020 - kicked off by the June 2020 COMP launch.
 
@@ -132,7 +140,7 @@ Outstanding borrows are also growing along with supply - \$1.5B as of mid-Dec 20
 
 ![](../../assets/Compound-Outstanding-Debt-Per-Asset-Per-Week.png)
 
-Is outstanding debt likely to increase by supporting other chains? There will be desire to borrow assets of other chains, so probably. It would seem that Compound has yet to extract as much as possible from Ethereum though (ETH's market cap alone is ~\$70B), and this still doesn't explain why the team wouldn't let someone else do the heavy interoperabilty lifting.
+Is outstanding debt likely to increase by supporting other chains? There will be desire to borrow assets of other chains, so probably. It would seem that Compound has yet to extract as much as possible from Ethereum though (ETH's market cap alone is ~\$70B), and this still doesn't explain why the team wouldn't let someone else do the heavy interoperability lifting.
 
 **Protocol Revenue To Date (Dec 2020)**
 
@@ -152,6 +160,10 @@ So, how would expanding chain support increase COMP value? Increasing assets sup
 
 Expanding our view a bit further to consider this in the context of handling interoperability themselves, increasing the scope of what COMP governs is likely to increase COMP's value in the long run because it removes the ability of a third-party to capture any of that value as transaction fees.
 
+**So to finally answer the question -- Does Compound need its own blockchain? Personally, I don't think so, but I see how one could be convinced that it provides the protocol with the best chances for success in maximizing borrowing activity, protocol revenue and COMP value.**
+
+---
+
 # Risks
 
 So what are the risks to a smart contract application implementing a purpose-built blockchain? **It comes down to getting four things right:** technical implementation, token economics, governance, and community (which is kinda tied to governance, but distinct enough to break out on its own IMO).
@@ -160,15 +172,15 @@ Depending on how much the team bootstraps technical implementation, it could be 
 
 The Compound team has significant experience with economics and governance, so I'm guessing they'll be alright there. They'll have no problem finding assistance with designing any sort of token economics that they don't have experience with, and then can lean on a governance mechanism like the one they already have in place today to fix anything that's not quite right once they go live.
 
-Community is what's unknown for me. Compound's been tied to Ethereum since its inception, and has been able to take advantage of the strong developer and investor community that's grown around it. Will the community they've built follow them to a new chain? Will Compound even need the community to follow with them? It's not clear, and likely depends on how composable it is and how incentivizes are designed. At the very least, governance requires active participants, so they'll need some subset of users to care. That being said, today's governance feels accessible only to those early parties that the team distributed tokens to during the launch of COMP (their VCs, Dharma, etc.), so maybe that's all they'll need to go along with them, and those parties will be motivated to actively participate in governance and draw users along, to maximize the value of their COMP holdings. Whether the rest of the DeFi ecosystem will care is still up in the air.
+Community is what's unknown for me. Compound's been tied to Ethereum since its inception and has been able to take advantage of the strong developer and investor community that's grown around it. Will the community they've built follow them to a new chain? Will Compound even need the community to follow with them? It's not clear, and likely depends on how composable it is and how incentives are designed. At the very least, governance requires active participants, so they'll need some subset of users to care. That being said, today's governance feels accessible only to those early parties that the team distributed tokens to during the launch of COMP (their VCs, Dharma, etc.), so maybe that's all they'll need to go along with them, and those parties will be motivated to actively participate in governance and draw users along, to maximize the value of their COMP holdings. Whether the rest of the DeFi ecosystem will care is still up in the air.
 
 ---
 
 # Takeaways
 
-- Compound is creating an application specific blockchain.
+- Compound is creating an application-specific blockchain.
 - The Compound team likely believes that there will be many successful chains in the long run, and they don't want to pick a winner.
 - Compound Chain allows for increased borrowing activity derived from expanded asset support, and drives as much value capture to COMP as possible.
 - Technical risk, economics, governance, and community all need to come together smoothly in order for the project to be successful.
 
-Did I get something wrong? [Send me a message.](mailto:mtthew.p.hamilton@protonmail.com)
+Did I get something wrong? [Send me a message.](mailto:matthew.p.hamilton@protonmail.com)
