@@ -5,7 +5,10 @@ import styles from './cookie.module.css'
 
 // This component is used to provide the user with the ability to accept or decline google analytics tracking. 
 // It's imported into the layout so that the user is prompted no mater which page they land on.
-// To-Do: Pull out styles into cookie.module.css
+// To-Do: 
+// - Pull out styles into cookie.module.css. 
+// - Technically not actually working. The decline button only sets the gatsby-plugin-google-gtag to false, but does not prevent GA tracking.
+//   Will need to refactor to prevent GA cookies from loading before acceptance. TBD on how to implement.
 
 const Cookie = () => (
     <div className={styles.cookie}>
