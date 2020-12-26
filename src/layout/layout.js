@@ -1,6 +1,7 @@
 import React from "react"
 import Footer from '../components/footer'
 import Header from '../components/header'
+import Cookie from '../components/cookie'
 
 import styles from './layout.module.css'
 
@@ -13,6 +14,7 @@ const Layout = ({ location, children }) => {
       <Header />
       <main>{children}</main>
       <Footer />
+      <Cookie />
     </div>
   )
 }
