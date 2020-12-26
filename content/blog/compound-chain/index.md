@@ -66,19 +66,15 @@ It probably helps to also think about how Layer 1 (i.e. the blockchain layer) pl
 2. _"There will be a handful of chains that succeed, and we (or our community) has the ability to pick them."_
 3. _"There will be many chains, and we don't want to try to pick winners."_
 
-View #1 implies doubling-down on Ethereum by picking a Layer 2 scaling solution that's in the works (Optimistic vs zkSync) and expending resources to support it. View #2 would mean re-building Compound on each individual chain that Compound (and its community) believes will be successful in the long run (Solana, Tezos, more listed in the Compound Chain whitepaper). View #3 would lead you down the path of considering that you may need to build your own chain and ensure interoperability between as many as possible.
+View #1 implies doubling-down on Ethereum by picking a Layer 2 scaling solution that's in the works (Optimistic vs zkSync) and expending resources to support it. View #2 would mean re-building Compound on each individual chain that Compound (and its community) believes will be successful in the long run (Solana, Tezos, more listed in the Compound Chain whitepaper), along with the communication relays between these chains -- if in scope. View #3 might lead you down the path of considering to build your own chain to ensure that the application is flexible enough to survive no matter which chains do.
 
-**It seems clear to me that the Compound team subscribes to View #3.** The benefits to subscribing to this view means that the Compound team will take action to make sure Compound succeeds whether any single underlying blockchain also succeeds or not. The negative is the increased technical difficulty and complexity of any solution proposed.
-
-Thinking about Layer 1 this way, you could convince yourself to build a blockchain. You could also convince yourself that your product just needs to leverage one (or multiple) of the interoperability solutions (Polkadot, Cosmos) being worked on.
+**It seems clear to me that the Compound team subscribes to View #3.** The team will likely take action to make sure the Compound application succeeds whether any single underlying blockchain also succeeds or not. Thinking about Layer 1 this way, you could convince yourself to build a blockchain. Increased scope, technical difficulty and complexity of the application will be a side effect.
 
 ---
 
 ## Protocol KPIs and Desired Outcomes
 
-So then, how does one decide between supporting an interoperability solution or building one yourself?
-
-We might consider the outcomes that the team is trying to drive. KPIs that the Compound team is likely thinking about, in no particular order:
+Thinking about this decision, we might also consider the outcomes that the team is trying to drive. KPIs that the Compound team is likely thinking about, in no particular order:
 
 - Number of Unique Active Users
 - Number of Assets Supported
@@ -120,9 +116,9 @@ Expanding beyond a single chain certainly expands the pool of assets to choose f
 1. The health of the network has less dependency on any one asset.
 2. The serviceable addressable market increases (i.e. the total possible value that can be supplied into Compound).
 
-Again, there is current a model for this - wrapping assets on the parent blockchain and issuing ERC-20 versions of them on Ethereum. I'd accept the argument that wrapped assets aren't really viable long term, however, as it provides no benefit for the parent chain. If anything, wrapped assets are a net negative for the parent chain because it locks those assets up and decreases parent network activity potential in exchange for activity on Ethereum.
+Again, there is current a model for this - wrapping assets on the parent blockchain and issuing ERC-20 versions of them on Ethereum. I'd accept the argument that wrapped assets aren't really viable long term, however, as it provides no benefit for the parent chain. If anything, wrapped assets are a net negative for the parent chain because it locks those assets up and decreases parent network activity potential in exchange for activity on Ethereum (or whereever the wrapped asset is deployed).
 
-There are teams working on interoperability though (Polkadot, Cosmos), in a way that doesn't require an application to build its own blockchain and interoperability solution in one. To decide to ignore these, you would have to either 1) not have much faith in their ability to execute on a solution that works for your application within a reasonable time frame, or 2) have a strong desire not to be tied to them.
+There are teams working on interoperability though (Polkadot, Cosmos), and assets will deploy to non-parent chains through them. It's definitely easier to support assets as they come to Ethereum through one of these solutions, but Compound would be at the mercy of the external teams responsible to execute if they did.
 
 ### Protocol revenue
 
@@ -158,9 +154,9 @@ COMP being the native value capture asset, it makes sense that maximizing the va
 
 So, how would expanding chain support increase COMP value? Increasing assets supported likely has a future positive impact on protocol revenue, which in turn positively impacts COMPs long-term price.
 
-Expanding our view a bit further to consider this in the context of handling interoperability themselves, increasing the scope of what COMP governs is likely to increase COMP's value in the long run because it removes the ability of a third-party to capture any of that value as transaction fees.
+Expanding our view a bit further to consider this in the context of focusing on interoperability themselves, increasing the scope of what COMP governs with a new blockchain is likely to increase COMP's value in the long run because it removes the ability of a third-party interoperability solution to capture any of that value as transaction fees.
 
-**So to finally answer the question -- Does Compound need its own blockchain? Personally, I don't think so, but I see how one could be convinced that it provides the protocol with the best chances for success in maximizing borrowing activity, protocol revenue and COMP value.**
+**So to finally answer the question -- Does Compound need its own blockchain? Personally, I still don't think so, but I see how one could be convinced that it provides the protocol with the best chances for success in maximizing borrowing activity, protocol revenue and COMP value.**
 
 ---
 
