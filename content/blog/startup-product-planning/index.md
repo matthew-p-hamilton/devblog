@@ -6,7 +6,7 @@ description: "How to productively plan your short-term product initiatives with 
 
 # What are we going to build the next quarter?
 
-When you're small and agile, it's very easy to go without planning past 1-2 sprints. Quarterly product planning is important, howvever, as it gives the team a chance to review previous outcomes, digest learnings, and align efforts moving forward. As importantly, it also allows you to refine your organization's roadmap for communication to stakeholders, both internally and externally.
+When you're small and agile, it's very easy to go without planning past 1-2 sprints. Quarterly product planning is important, however, as it gives the team a chance to review previous outcomes, digest learnings, and align efforts moving forward. As importantly, it also allows you to refine your organization's roadmap for communication to stakeholders, both internally and externally.
 
 I want to share a methodology we've used at Linus for this.
 
