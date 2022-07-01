@@ -76,3 +76,22 @@ NYSE Arca has [applied](https://www.sec.gov/rules/sro/nysearca/2022/34-94151.pdf
 - An ETF administrator like Greyscale files a lawsuit against the SEC and attempts to get the court force the SEC's hand, which would take multiple year (most likely)
 
 Let's see in a year or two how these thoughts age.
+
+<hr>
+
+## Update: Jun 30, 2022
+
+We didn't have to wait for July 7th -- the SEC released their [disapproval](https://www.sec.gov/rules/sro/nysearca/2022/34-95180.pdf) the day after I published this. Greyscale was ready for this, with an immediate [filing of a petition](https://grayscale.com/wp-content/uploads/2022/06/DC-Circuit-Petition-for-Review-as-filed.pdf) with the US Court of Appeals to litigate the decision. Their criticism primarily focuses on the consistency of the SEC's analysis of a Bitcoin Spot ETF compared to similar instruments.
+
+> If regulators are comfortable with ETFs that hold derivatives of a given asset, they should logically be comfortable with ETFs that hold that same asset.
+
+I don't disagree with the sentiment, but it also seems Greyscale's incentives may be misaligned here and that this lawsuit is more of a dog & pony show than a real effort. Ryan Selkis from Messari had a [great breakdown](https://messari.io/article/the-grayscale-gensler-stalemate) of the specific situation for added context.
+
+**The scenarios here:**
+
+1. Greyscale wins, ETF conversion is allowed.
+2. SEC relents, ETF conversion is allowed.
+3. Greyscale relents, ETF conversion is disallowed.
+4. SEC wins, ETF conversion is disallowed.
+
+Scenario 1 would set precedent and open the flood gates for more ETFs. Scenario 4 would mean that the SEC has a strong leg to stand on with its requirement of a surveillance-sharing agreement from regulated market participants. Either way, litigating with the SEC is likely to take years. It's going to be quite a while before we see a resolution.
