@@ -6,9 +6,9 @@ module.exports = {
       summary: `lives and works in Brooklyn, NY.`,
     },
     description: `A personal site containing the musings of Matt Hamilton.`,
-    siteUrl: `https://matthewphamilton.com`,
+    siteUrl: `https://ham.lol`,
     social: {
-      twitter: `mattphamilton`,
+      twitter: `ham__lol`,
     },
   },
   plugins: [
