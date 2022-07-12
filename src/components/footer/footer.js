@@ -22,7 +22,7 @@ const Footer = () => (
                 <LinkedinLogo weight="fill" size={32} />
             </a>
             <a
-                href='https://twitter.com/mattphamilton'
+                href='https://twitter.com/ham__lol'
                 target='_blank'
                 rel='noopener noreferrer'
             >
