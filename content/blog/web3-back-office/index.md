@@ -1,10 +1,10 @@
 ---
-title: Crypto Product Concept - Back Office Software for Web3
+title: (PC) Back Office Software for Web3
 date: "2022-07-12T00:00:00.000Z"
 description: "Quick thoughts on how to improve web3 community back office capabilities"
 ---
 
-_As an exercise in organizing my thoughts on new opportunities in the crypto space, from time to time I’m going to start publishing pieces in a new series, called “Crypto Product Concepts”. These are quick hitters (~2 hours) that outline an interesting problem space, potential solution(s), and opportunities for monetization. Hopefully this series will spark some ideas for a budding builder._
+_As an exercise in organizing my thoughts on new opportunities in the crypto space, from time to time I’m going to start publishing pieces in a new series, called "Product Concepts”, or "PC" for short. These are quick hitters (~2 hours) that outline an interesting problem space, potential solution(s), and opportunities for monetization. Hopefully this series will spark some ideas for a budding builder._
 
 <hr>
 
@@ -24,6 +24,8 @@ An example of how [DXdao](https://dxdao.eth.link/) — a well functioning DAO th
 DXdao has its shit together in regards to back office operations, but they’ve had 3 years to get here. They’ve put significant effort into operationalizing their back office on-chain as much as possible. That being said, even DXdao could benefit itself, along with existing and prospective DXD holders, with a bit more transparent information about the organization’s back office in a centralized location.
 
 Other times we have a group of contributor pseudo-anons who leave us to decipher how the DAO is being run via Etherscan transactions.
+
+_Update: DXdao Governance Lead, Chris Powers, has linked me to a recent expense report he published in the DAO forum - https://daotalk.org/t/dxdao-expenses-update-june-2022/4285. This is an awesome breakdown on how the DAO is burning through its capital, but it's clearly a manual process that takes a ton of work. Can this be automated?_
 
 # Potential Future State
 
