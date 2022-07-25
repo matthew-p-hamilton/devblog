@@ -1,10 +1,10 @@
 ---
-title: (PC) Back Office Software for Web3
+title: Back Office Software for Web3
 date: "2022-07-12T00:00:00.000Z"
 description: "Quick thoughts on how to improve web3 community back office capabilities"
 ---
 
-_As an exercise in organizing my thoughts on new opportunities in the crypto space, from time to time I’m going to start publishing pieces in a new series, called "Product Concepts”, or "PC" for short. These are quick hitters (~2 hours) that outline an interesting problem space, potential solution(s), and opportunities for monetization. Hopefully this series will spark some ideas for a budding builder._
+_As an exercise in organizing my thoughts on new opportunities in the crypto space, from time to time I’m going to start publishing pieces on interesting product concepts that I see a potential need for. Hopefully they will spark some ideas for a budding builder._
 
 <hr>
 
