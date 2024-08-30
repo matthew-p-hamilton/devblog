@@ -10,7 +10,7 @@ const ArchivePage = ({ data, location }) => {
   if (archivedPosts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO title="Archived Posts" />
+        <SEO title="Archived Posts" noindex={true} />
         <p>No archived posts found.</p>
       </Layout>
     )
@@ -18,7 +18,7 @@ const ArchivePage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Archived Posts" />
+      <SEO title="Archived Posts" noindex={true} />
       <h1>Archived Posts</h1>
       <ol style={{ listStyle: `none` }}>
         {archivedPosts.map(post => {
