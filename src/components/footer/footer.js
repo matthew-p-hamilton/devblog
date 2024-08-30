@@ -28,13 +28,6 @@ const Footer = () => (
             >
                 <TwitterLogo weight="fill" size={32} />
             </a>
-            <a
-                href='https://twitter.com/mattphamilton'
-                target='_blank'
-                rel='noopener noreferrer'
-            >
-                <MediumLogo weight="fill" size={32} />
-            </a>
         </div>
         © {new Date().getFullYear()}
     </div>
