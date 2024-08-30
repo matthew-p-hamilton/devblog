@@ -5,7 +5,7 @@ module.exports = {
       name: `Matt Hamilton`,
       summary: `lives and works in Brooklyn, NY. Twitter: @ham__lol.`,
     },
-    description: `A personal site containing the musings of Matt Hamilton.`,
+    description: `The personal site of Matt Hamilton.`,
     siteUrl: `https://ham.lol`,
     social: {
       twitter: `ham__lol`,
@@ -23,6 +23,13 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/assets`,
+        name: `assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/archive`,
         name: `assets`,
       },
     },

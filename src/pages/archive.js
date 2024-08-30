@@ -1,34 +1,27 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
 import Layout from "../layout"
 import SEO from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
+const ArchivePage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+  const archivedPosts = data.allMarkdownRemark.nodes
 
-  if (posts.length === 0) {
+  if (archivedPosts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO title="Matt Hamilton's website." />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
+        <SEO title="Archived Posts" />
+        <p>No archived posts found.</p>
       </Layout>
     )
   }
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Matt Hamilton's website." />
-      <Bio />
+      <SEO title="Archived Posts" />
+      <h1>Archived Posts</h1>
       <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
+        {archivedPosts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
@@ -63,7 +56,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default ArchivePage
 
 export const pageQuery = graphql`
   query {
@@ -74,7 +67,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: { regex: "/blog/" } } # Only include posts from the "blog" folder
+      filter: { fileAbsolutePath: { regex: "/archive/" } } # Only include posts from the "archive" folder
     ) {
       nodes {
         excerpt
